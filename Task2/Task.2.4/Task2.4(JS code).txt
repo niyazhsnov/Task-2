@@ -1,0 +1,14 @@
+var month=prompt();
+ if(month=="January"||month=="March"||month=="May"||month=="July"||month=="August"||month=="Octomber"||month=="December")
+      {
+          alert("31");
+      }
+      else if(month=="April"||month=="June"||month=="September"||month=="November") {
+           alert("30");
+      }
+      else if(month=="February"){
+          alert("28");
+      }
+      else{
+          alert("Wrong input");
+      }

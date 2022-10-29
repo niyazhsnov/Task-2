@@ -1,0 +1,11 @@
+var num = prompt(),hun,deci,soli;
+num= parseInt(num);
+      hun=Math.floor(num/100);
+      deci=Math.floor(num/10%10);
+      soli=Math.floor(num%10);
+      if(hun != deci && deci !=soli && hun!=soli){
+        alert("All numbers are not equal")
+      }
+      else{
+        alert("false")
+      }

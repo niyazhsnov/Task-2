@@ -1,0 +1,10 @@
+var LangValue=prompt();
+if(LangValue=='a' || LangValue=='A'){
+  alert('Azerbaijani language chosen')
+}
+else if(LangValue=='r' || LangValue=='R'){
+  alert('Russian language chosen')
+}
+else{
+  alert('Wrong input')
+}

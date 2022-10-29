@@ -1,0 +1,9 @@
+var num = prompt(),thou,hun,deci,soli,sum;
+num= parseInt(num);
+      thou=Math.floor(num/1000);
+      hun=Math.floor(num/100%10);
+      deci=Math.floor(num/10%10);
+      soli=Math.floor(num%10);
+      sum=thou+hun+soli+deci;
+      alert(sum);
+

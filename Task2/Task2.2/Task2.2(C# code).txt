@@ -1,0 +1,23 @@
+using System;
+namespace Task2
+{
+class Program 
+{
+  static void Main(string[] args) 
+     {
+       
+      int num,hun,deci,soli;
+      num = Convert.ToInt32(Console.ReadLine());
+      hun=num/100;
+      deci=num/10%10;
+      soli=num%10;
+      if(hun != deci && deci !=soli && hun!=soli){
+          Console.WriteLine("All numbers are not equal");
+      }
+      else{
+      Console.WriteLine("false");
+      }
+        }
+     }
+    
+}
