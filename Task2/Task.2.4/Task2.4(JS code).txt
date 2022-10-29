@@ -1,3 +1,5 @@
+//Using if else operator
+
 var month=prompt();
  if(month=="January"||month=="March"||month=="May"||month=="July"||month=="August"||month=="Octomber"||month=="December")
       {
@@ -12,3 +14,28 @@ var month=prompt();
       else{
           alert("Wrong input");
       }
+
+//Using switchcase operator
+var month=prompt(),days="Wrong input";
+       switch (month)
+       {
+           case "January":
+           case "March":
+           case "May":
+           case "July":
+           case "August":
+           case "Octomber":
+           case "December":
+                           days="31";
+                           break;
+           case "April":
+           case "June":
+           case "September":
+           case "November":
+                           days="30";
+                           break;
+           case "February":
+                           days="28";
+                           break;
+       }
+       alert(days);
