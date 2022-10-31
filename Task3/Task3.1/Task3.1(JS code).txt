@@ -1,11 +1,16 @@
-var num=prompt(),count=0,pow=0,i=2;
+var num=prompt(),count=0,pow=0,i=1,hpow=0,lpow=0,hcom,lcom;
 num= parseInt(num);
-if(num==0 || num==1)alert("1");
-else{
+if(num==1)Console.WriteLine("1");
+
 while(i<=num){
-i=i<<1;
-count++;
-pow=i;
-}
- if(num+1==pow){count++;}
-alert(count)}
+          i=i<<1;
+          count++;
+          hpow=i;
+      }
+       lpow=hpow/2;
+       hcom=hpow-num;
+       lcom=num-lpow;
+      if(hcom<lcom)alert(count);
+      else if(hcom>lcom)alert(count-1);
+      else if(hcom==lcom)alert(count-1);
+
