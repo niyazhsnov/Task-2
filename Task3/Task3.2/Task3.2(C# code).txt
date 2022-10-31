@@ -1,0 +1,20 @@
+using System;
+namespace Task3
+{
+class Program 
+{
+  static void Main(string[] args) 
+     {
+       
+      int num,digit,sum=0;
+      num = Convert.ToInt32(Console.ReadLine());
+      do{
+          digit=num%10;
+          sum+=digit;
+          num/=10;
+      }while(num>0);
+      Console.WriteLine(sum);
+      }
+        }
+     }
+    
