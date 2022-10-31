@@ -1,0 +1,11 @@
+var num=prompt(),count=0,pow=0,i=2;
+num= parseInt(num);
+if(num==0 || num==1)alert("1");
+else{
+while(i<=num){
+i=i<<1;
+count++;
+pow=i;
+}
+ if(num+1==pow){count++;}
+alert(count)}
