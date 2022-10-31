@@ -6,19 +6,20 @@ class Program
   static void Main(string[] args) 
      {
        
-      int num,count=0,pow=0,i=2;
+      int num,count=0,hpow=0,lpow=0,i=1,hcom,lcom;
       num = Convert.ToInt32(Console.ReadLine());
-      if(num==0 || num==1)Console.WriteLine("1");
-      else{
+      if(num==1)Console.WriteLine("1");
       while(i<=num){
           i=i<<1;
           count++;
-          pow=i;
+          hpow=i;
       }
-         if(num+1==pow){count++;}
-      Console.WriteLine(count);
+       lpow=hpow/2;
+       hcom=hpow-num;
+       lcom=num-lpow;
+      if(hcom<lcom)Console.WriteLine(count);
+      else if(hcom>lcom)Console.WriteLine(count-1);
+      else if(hcom==lcom)Console.WriteLine(count-1);
       }
         }
      }
-    
-}
