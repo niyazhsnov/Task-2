@@ -1,0 +1,8 @@
+var num=prompt(),digit,sum=0;
+num= parseInt(num);
+do{
+digit=num%10;
+sum+=digit;
+num/=10;
+}while(num>0);
+alert(parseInt(sum))
