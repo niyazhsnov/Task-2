@@ -12,6 +12,7 @@ class Program
           if(num%i==0)counter++;
       }
       if(counter!=0)Console.WriteLine("complex");
+      else if(num==0 || num==1)Console.WriteLine("not simple and not complex")
       else {Console.WriteLine("simple");}
       }
         }
