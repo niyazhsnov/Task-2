@@ -5,4 +5,4 @@ digit=num%10|0;
 sum+=digit;
 num/=10;
 }while(num>0);
-alert(parseInt(sum))
+alert(sum)
